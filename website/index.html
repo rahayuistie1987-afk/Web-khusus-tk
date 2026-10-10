@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website YBR</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: aliceblue;
+        }
+        .container {
+            border: 2px solid #444;
+            border-radius: 4px;
+            padding: 20px;
+        }
+        .container h2 {
+            font-size: 12vh;
+        }
+        .container button {
+            padding: 12px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            transition: background-color 0.4s;
+        }
+        .container button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>udah siapkah belajar?</h2><br>
+        <button id="btn">Get Started to website lenguage indonesia</button>
+        <button id="btn-en">Get Started to website lenguage english</button>
+    </div>
+    <script>
+        const btn = document.getElementById('btn');
+        const btn2 = document.getElementById('btn-en');
+        btn.addEventListener('click', () => {
+            window.location.href = '/indonesia/Version-1.0.0/website/student/tk/';
+        });
+        btn2.addEventListener('click', () => {
+            window.location.href = '/english/Version-1.0.0/website/student/tk/';
+            if (e.key === "+") window.location.href = 'License.txt';
+        });
+    </script>
+</body>
+</html>

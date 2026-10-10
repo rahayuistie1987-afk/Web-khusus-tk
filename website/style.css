@@ -1,0 +1,87 @@
+/* Styling Global & Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: yellowgreen;
+    color: #000;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Modal / Box Alert */
+#alertBox {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#judul {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 7px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Container Utama untuk Baris Kotak */
+.kotak-wadah {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px;
+}
+
+/* Kelompok Kotak (Border Pembungkus) */
+.kotak-class-1,
+.kotak-class-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    width: fit-content; 
+    box-sizing: border-box;
+}
+
+/* Properti Seragam Semua Kotak Gambar */
+[class^="kotak-"] {
+    width: 144px;
+    height: 144px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Style Gambar Masing-Masing Kotak */
+.kotak-1 { border: 2px dashed red; background-image: url('./gambar/satu.jpg'); }
+.kotak-2 { border: 2px dashed yellow; background-image: url('./gambar/dua.jpg'); }
+.kotak-3 { border: 2px dashed green; background-image: url('./gambar/tiga.jpg'); }
+.kotak-4 { border: 2px dashed blue; background-image: url('./gambar/empat.jpg'); }
+.kotak-5 { border: 2px dashed blueviolet; background-image: url('./gambar/lima.jpg'); }
+.kotak-6 { border: 2px dashed greenyellow; background-image: url('./gambar/enam.jpg'); }
+.kotak-7 { border: 2px dashed chocolate; background-image: url('./gambar/tujuh.jpg'); }
+.kotak-8 { border: 2px dashed pink; background-image: url('./gambar/delapan.jpg'); }
+.kotak-9 { border: 2px dashed chartreuse; background-image: url('./gambar/sembilan.jpg'); }
+.kotak-10 { border: 2px dashed brown; background-image: url('./gambar/sepuluh.jpg'); }
